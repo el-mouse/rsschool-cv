@@ -19,7 +19,23 @@ A basic level of
 * OpenCart;
 * 1С-Битрикс.
 ## Sample code
-Coming soon...
+```<header>
+        <div class="wrapper">
+            <div class="navigation">
+                <img src="/img/logo.png" alt="Logo Pizza">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact US</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+```
+    
 ## Education
 1998–2003 | Belarusian State Technological University, Faculty of Publishing and Printing
 
