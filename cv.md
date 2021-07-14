@@ -37,10 +37,12 @@ A basic level of
 ```
     
 ## Education
-1998–2003 | Belarusian State Technological University, Faculty of Publishing and Printing
 
-2014 | A1QA, software testing
+1998–2003 – Belarusian State Technological University, Faculty of Publishing and Printing
 
-2021 | online learning: HTML Academy, Glo Academy, webDev
+2014 – A1QA, software testing
+
+2021 – online learning: HTML Academy, Glo Academy, webDev
+
 ## English level
 Middle between A1 and A2.
