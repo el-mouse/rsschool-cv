@@ -2,8 +2,12 @@
     --bg1: #000000;
     --bg2: #fff3bb;
     --tw: #ffffff;
+    --to: #ee9d14;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: var(--bg2);
@@ -16,6 +20,31 @@ body {
     width: 100%;
     min-height: 100vh;
     margin: 0 auto;
+}
+
+h2 {
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(to right, var(--bg1), var(--bg2)) ;
+    color: var(--tw);
+    border-radius: 10px;
+    font-size: 28px;
+}
+
+h2::before {
+    content: "";
+    background-color: var(--to);
+    border-color: black;
+    border-style: dotted;
+    margin-right: 10px;
+}
+
+
+h3 {
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+
 }
 
 /*HEADER */
@@ -60,16 +89,34 @@ body {
     justify-content: space-between;
     align-items: center;
     column-gap: 50px;
+    padding-left: 0;
     text-transform: uppercase;
 }
 
-/* .nav-items > li {
-    padding-left: 20px;
+.nav-items > li > a {
+    color: var(--tw);
+} 
 
-} */
+.nav-items > li > a:hover {
+    color: var(--to);
+}
+
+.nav-items > li > a:active {
+    color: var(--to);
+}
+
 
 li {
     list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*MAIN*/
@@ -77,13 +124,87 @@ li {
 .main-box {
     margin: 0 auto;
     max-width: 900px;
-    padding: 0 2rem;
+    padding: 10px;
+}
+
+section {
+    /* border: solid 1px #000000; */
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contacts-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.cv-photo {
+    border-radius: 50%;
+    border: solid 5px var(--tw);
+}
+
+.icon-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+
+}
+
+figure {
+    text-align: center; 
+}
+
+
+.pr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+
+}
+
+
+
+/*FOOTER*/
 
 .footer {
     background-color: var(--bg1);
     color: var(--tw);
 }
 
+
+.footer-items {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    font-size: 18px;
+
+}
+
+.item-bg {
+    background-color: var(--bg2);
+    padding: 5px;
+    border-radius: 10px;
+}
+ 
 
 /* body {
     font-family: "Roboto", sans-serif;
