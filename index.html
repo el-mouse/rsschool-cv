@@ -9,6 +9,9 @@
             <link rel="icon" href="./img/favicon.ico">
             <link rel="stylesheet" href="./css/normalize.css">
             <link rel="stylesheet" href="./css/style.css">
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
         </head>
         <body>
             <div class="wrapper">
@@ -34,16 +37,43 @@
                         <section id="contacts">
                             <h2>Contacts</h2>
                             <div class="contacts-box">
-                                <figure>
+                                <figure class="contacts-bg">
                                     <img class="cv-photo" src="./img/CV_photo.jpg" alt="Alena Baikova" width="100" height="100">
-                                    <figcaption >Alena Baikova</figcaption>
+                                    <figcaption class="heading">Alena Baikova</figcaption>
+                                    
+                                    <p>Junior Front-End Developer</p>
                                 </figure>
-                                <ul>
-                                    <li>Location: Minsk, Belarus</li>
-                                    <li>Tel.: <a href="tel:+375297020831">+375 29 702 08 31</a></li>
-                                    <li>E-mail: <a href="mailto:elena.bo.d8@gmail.com">elena.bo.d8@gmail.com</a></li>
-                                    <li>Skype: elena.bo.d8</li>
-                                    <li>Discord: Alena Baikova (@el-mouse) #9145</li>
+                                <ul class="contacts-items">
+                                    <li>
+                                        <div class="contacts-list">
+                                            <img src="./img/pin.svg" alt="Location" width="30" height="30">
+                                            <p>Location: Minsk, Belarus</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contacts-list">
+                                            <img src="./img/phone-call.svg" alt="Telephone" width="30" height="30">
+                                            <p>Tel.: <a href="tel:+375297020831">+375 29 702 08 31</a></p>
+                                        </div>   
+                                    </li>
+                                    <li>
+                                        <div class="contacts-list">
+                                            <img src="./img/email.svg" alt="E-mail" width="30" height="30">
+                                            <p>E-mail: <a href="mailto:elena.bo.d8@gmail.com">elena.bo.d8@gmail.com</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contacts-list">
+                                            <img src="./img/skype.svg" alt="Skype" width="30" height="30">
+                                            <p>Skype: elena.bo.d8</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contacts-list">
+                                            <img src="./img/discord.svg" alt="Discord" width="30" height="30">
+                                            <p>Discord: Alena Baikova (@el-mouse) #9145</p>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
 
@@ -103,27 +133,47 @@
                         <section id="projects">
                             <h2>Projects</h2>
                             <h3>Recent projects</h3>
-                            <div>
+                            <article>
                                 <h4>Cafe Pizza landing page</h4>
                                 <div class="pr">
-                                    <p>A landing page for a cafe. Made with HTML and CSS.</p>
+                                    <p>A landing page for a cafe. </p>
+                                    <p>Made with HTML and CSS.</p>
                                     <a href="https://el-mouse.github.io/Pizza/" target="_blanc"><img src="./img/pizza.jpg" alt="Pizza" width="300" height="195"></a>
                                 </div>
-                            </div>
-                            <div>
+                            </article>
+                            <article>
                                 <h4>Drum Kit </h4>
                                 <div class="pr">
-                                    <p>Drum Kit is a music application in which you can play sounds <br>by pressing keys on the keyboard. <br>Each key has its own sound. A task from a RS School course. <br>Made with HTML, CSS, JS.</p>
+                                    <p>Drum Kit is a music application in which you can play sounds <br>by pressing keys on the keyboard. <br>Each key has its own sound. A task from a RS School course. </p>
+                                    <p>Made with HTML, CSS, JS.</p>
                                     <a href="https://rolling-scopes-school.github.io/el-mouse-JSFEPRESCHOOL/drum-kit/" target="_blanc"><img src="./img/dk.jpg" alt="Drum Kit"></a>
                                 </div>
-                                
-
-                            </div>
+                            </article>
                             <h3>Sample code</h3>
-                            <div></div>
+                                <pre>
+                                    <code >
+function playByMouseClick(e) {
+    const keyCode = this.getAttribute('data-key');
+    const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
+    if (!audio) return;
+    audio.currentTime = 0;
+    audio.play();
+    const key = document.querySelector(`.key[data-key="${keyCode}"]`);
+    key.classList.add('playing');                                       
+}
+                                    </code>
+                                </pre>
                         </section>
                         <section id="education">
                             <h2>Education</h2>
+                            <h3>Higher education</h3>
+                            <p>1998–2003: Belarusian State Technological University, Faculty of Publishing and Printing</p>
+                            <h3>Courses</h3>
+                            <p>2014: A1QA, software testing</p>
+                            <p>2021: RS School, JS/FE, Pre-School</p>
+                            <p>Online learning: HTML Academy, Glo Academy, webDev</p>
+                            <h3>English level</h3>
+                            <p>Middle between A1 and A2.</p>
                         </section>
 
                     </div>

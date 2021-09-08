@@ -34,17 +34,38 @@ h2 {
 h2::before {
     content: "";
     background-color: var(--to);
-    border-color: black;
+    border-color: var(--bg1);
     border-style: dotted;
     margin-right: 10px;
 }
 
-
 h3 {
     margin: 0;
-    padding: 10px;
+    padding: 20px 10px 20px 30px;
     font-size: 24px;
+}
 
+h3::before {
+    content: "";
+    background-color: var(--to);
+    border-color: var(--bg2);
+    border-style: dotted;
+    margin-right: 10px;
+}
+
+h4 {
+    margin: 0;
+    text-align: center;
+
+}
+
+pre {
+    margin: 0;
+    
+}
+
+code {
+    border-radius: 10px;
 }
 
 /*HEADER */
@@ -71,7 +92,7 @@ h3 {
     column-gap: 20px;
 }
 
-.logo-cv {
+/* .logo-cv {
     width: 50px;
     height: 50px;
     background-color: rgb(221, 88, 88);
@@ -79,7 +100,7 @@ h3 {
     text-align: center;
     font-size: 32px;
     font-weight: 900;
-}
+} */
 
 
 .nav-items {
@@ -146,8 +167,66 @@ section {
 }
 
 .cv-photo {
-    border-radius: 50%;
-    border: solid 5px var(--tw);
+    border-radius: 30px 0 30px 0;
+    
+}
+
+/* .contacts-bg {
+    background-color: var(--tw);
+    padding: 20px;
+    border-radius: 5px 30px 30px 5px;
+    font-weight: 900;
+
+} */
+
+.heading {
+    padding-top: 20px;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.heading::after {
+    content: "";
+    display: block;
+    padding-top: 10px;
+    width: 100%;
+    border-bottom: 4px dashed var(--to);
+    
+}
+
+.contacts-bg > p {
+    text-transform: uppercase;
+}
+
+.contacts-items {
+    /* line-height: 40px; */
+}
+
+
+
+.contacts-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+    padding-bottom: 10px;
+   
+}
+
+.contacts-list > p > a {
+    color: var(--bg1);
+    border-bottom: 1px solid var(--to);
+}
+
+.contacts-list > p > a:hover {
+    border: none;
+}
+
+.contacts-list > p {
+    margin: 0;
 }
 
 .icon-list {
@@ -166,16 +245,23 @@ figure {
 
 
 .pr {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 20px;
 
 }
 
+article {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
 
+article:hover {
+    box-shadow: 2px 1px 5px 2px var(--to);
+}
 
 /*FOOTER*/
 
