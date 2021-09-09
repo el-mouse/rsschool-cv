@@ -30,6 +30,20 @@
                                 <li><a href="#education">Education</a></li>
                             </ul>
                         </nav>
+                        <div class="burger">
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                            </label>
+                            <ul class="menu__box">
+                                <li><a class="menu__item" href="#contacts">Contacts</a></li>
+                                <li><a class="menu__item" href="#summary">Summary</a></li>
+                                <li><a class="menu__item" href="#skills">Skills</a></li>
+                                <li><a class="menu__item" href="#projects">Projects</a></li>
+                                <li><a class="menu__item" href="#education">Education</a></li>
+                            </ul>
+                            <!-- <img src="./img/menu.svg" alt="Menu" width="40" height="40"> -->
+                        </div>
                     </div>
                 </header>
                 <main>
@@ -135,7 +149,7 @@
                             <h3>Recent projects</h3>
                             <article>
                                 <h4>Cafe Pizza landing page</h4>
-                                <div class="pr">
+                                <div class="project">
                                     <p>A landing page for a cafe. </p>
                                     <p>Made with HTML and CSS.</p>
                                     <a href="https://el-mouse.github.io/Pizza/" target="_blanc"><img src="./img/pizza.jpg" alt="Pizza" width="300" height="195"></a>
@@ -143,7 +157,7 @@
                             </article>
                             <article>
                                 <h4>Drum Kit </h4>
-                                <div class="pr">
+                                <div class="project">
                                     <p>Drum Kit is a music application in which you can play sounds <br>by pressing keys on the keyboard. <br>Each key has its own sound. A task from a RS School course. </p>
                                     <p>Made with HTML, CSS, JS.</p>
                                     <a href="https://rolling-scopes-school.github.io/el-mouse-JSFEPRESCHOOL/drum-kit/" target="_blanc"><img src="./img/dk.jpg" alt="Drum Kit"></a>
@@ -187,6 +201,15 @@ function playByMouseClick(e) {
                 </footer> 
             </div>
 
+            <!-- <script>
+                (function () {
+                    const burger = document.querySelector('.burger');
+                    burger.addEventListener('click', () => {
+                        burger.classList.toggle('burger-active');
+                    } );
+                });
+            </script>
+ -->
 
 
             <!-- <div class="wrapper">

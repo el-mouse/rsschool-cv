@@ -56,16 +56,18 @@ h3::before {
 h4 {
     margin: 0;
     text-align: center;
-
 }
 
 pre {
     margin: 0;
-    
 }
 
 code {
     border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
 }
 
 /*HEADER */
@@ -79,7 +81,7 @@ code {
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 1400px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,6 +142,102 @@ a {
     text-decoration: none;
 }
 
+.burger {
+    cursor: pointer;
+}
+
+#menu__toggle {
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+}
+  
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--tw);
+    transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+  
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    
+    width: 150px;
+    margin: 0;
+    padding: 80px 0 10px 0;
+    list-style: none;
+    background-color: var(--bg1);
+    transition-duration: 0.25s;
+    border-radius: 10px;
+}
+  
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: var(--tw);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition-duration: 0.25s;
+    text-transform: uppercase;
+}
+
+.menu__item:hover {
+    background-color: var(--to);
+}
+
+
+/* .burger-active {
+    width: 40px;
+    height: 40px;
+    background: url(./img/close.svg) no-repeat center;
+    background-size: contain;
+
+
+} */
+
 /*MAIN*/
 
 .main-box {
@@ -192,7 +290,6 @@ section {
     padding-top: 10px;
     width: 100%;
     border-bottom: 4px dashed var(--to);
-    
 }
 
 .contacts-bg > p {
@@ -203,8 +300,6 @@ section {
     /* line-height: 40px; */
 }
 
-
-
 .contacts-list {
     display: flex;
     flex-direction: row;
@@ -213,7 +308,6 @@ section {
     align-items: center;
     column-gap: 10px;
     padding-bottom: 10px;
-   
 }
 
 .contacts-list > p > a {
@@ -236,7 +330,6 @@ section {
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-
 }
 
 figure {
@@ -244,7 +337,7 @@ figure {
 }
 
 
-.pr {
+.project {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
@@ -274,15 +367,14 @@ article:hover {
 .footer-items {
     margin: 0 auto;
     padding: 10px;
-    max-width: 1400px;
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     column-gap: 100px;
     font-size: 18px;
-
 }
 
 .item-bg {
@@ -290,7 +382,69 @@ article:hover {
     padding: 5px;
     border-radius: 10px;
 }
+
+.item-bg:hover {
+    background-color: var(--to);
+    padding: 5px;
+    border-radius: 10px;
+}
  
+/*ADAPTIVE 1024 992*/
+
+/* @media (min-width: 992px) {
+    .burger {
+        display: none;
+    }
+} */
+
+
+@media (max-width: 1200px) {
+    .header-box, .footer-items {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-box, .footer-items {
+        max-width: 900px;
+    }
+    
+} 
+
+@media (max-width: 992px) {
+    .header-box, .footer-items, .main-box {
+        max-width: 800px;
+    }
+    .nav-header {
+        display: none;
+    }
+}  
+
+@media (max-width: 767px) {
+    .header-box, .footer-items {
+        max-width: none;
+    }
+    
+    
+    .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* column-gap: 10px; */
+    }
+    figure {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .footer-items {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}  
+
+
 
 /* body {
     font-family: "Roboto", sans-serif;
