@@ -4,7 +4,7 @@ Minsk, Belarus
 **Tel.:** +375 29 7020831  
 **E-mail:** elena.bo.d8@gmail.com  
 **Skype:** elena.bo.d8  
-**Discord:** Alena Baikova (@el-mouse)  
+**Discord:** Alena Baikova (@el-mouse) #9145 
 
 ## Summary
 I am Alena Baikova. I have worked as a content-manager for the last 2 years. I learned a lot of new things in my last job. My goal is to acquire a new profession (a frontend developer). I want to create useful products that are easy to use. One of my main strength is the ability to work in a team. I like interesting challenges. I hope that my knowledge and previous experience will help to become a good frontend developer.
@@ -19,21 +19,16 @@ A basic level of
 * OpenCart;
 * 1С-Битрикс.
 ## Sample code
-```<header>
-        <div class="wrapper">
-            <div class="navigation">
-                <img src="/img/logo.png" alt="Logo Pizza">
-                <nav>
-                    <ul class="nav">
-                        <li><a href="#">Newsletter</a></li>
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Contact US</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+```
+function playByMouseClick(e) {
+            const keyCode = this.getAttribute('data-key');
+	        const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
+            if (!audio) return;
+	        audio.currentTime = 0;
+	        audio.play();
+	        const key = document.querySelector(`.key[data-key="${keyCode}"]`);
+            key.classList.add('playing');
+}
 ```
     
 ## Education
@@ -42,7 +37,7 @@ A basic level of
 
 2014 – A1QA, software testing
 
-2021 – online learning: HTML Academy, Glo Academy, webDev
+2021 – online learning: HTML Academy, freeCodeCamp, Glo Academy, webDev
 
 ## English level
 Middle between A1 and A2.
