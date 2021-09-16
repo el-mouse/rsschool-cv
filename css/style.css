@@ -183,6 +183,7 @@ a {
 .burger a:hover {
     background-color: var(--to);
     opacity: 0.7;
+    border-radius: 10px;
 }
 
 /*MAIN*/
