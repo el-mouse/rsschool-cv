@@ -9,6 +9,7 @@
             <link rel="icon" href="./img/favicon.ico">
             <link rel="stylesheet" href="./css/normalize.css">
             <link rel="stylesheet" href="./css/style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
             <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
             <script>hljs.initHighlightingOnLoad();</script>
@@ -31,19 +32,17 @@
                             </ul>
                         </nav>
                         <div class="burger">
-                            <input id="menu__toggle" type="checkbox" />
-                            <label class="menu__btn" for="menu__toggle">
-                            <span></span>
-                            </label>
-                            <ul class="menu__box">
-                                <li><a class="menu__item" href="#contacts">Contacts</a></li>
-                                <li><a class="menu__item" href="#summary">Summary</a></li>
-                                <li><a class="menu__item" href="#skills">Skills</a></li>
-                                <li><a class="menu__item" href="#projects">Projects</a></li>
-                                <li><a class="menu__item" href="#education">Education</a></li>
-                            </ul>
-                            <!-- <img src="./img/menu.svg" alt="Menu" width="40" height="40"> -->
-                        </div>
+                            <div id="links">
+                                <a href="#contacts">Contacts</a>
+                                <a href="#summary">Summary</a>
+                                <a href="#skills">Skills</a>
+                                <a href="#projects">Projects</a>
+                                <a href="#education">Education</a>
+                            </div>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                              <i class="fa fa-bars"></i>
+                            </a>
+                          </div>
                     </div>
                 </header>
                 <main>
@@ -51,12 +50,11 @@
                         <section id="contacts">
                             <h2>Contacts</h2>
                             <div class="contacts-box">
-                                <figure class="contacts-bg">
+                                <div class="contacts-bg">
                                     <img class="cv-photo" src="./img/CV_photo.jpg" alt="Alena Baikova" width="100" height="100">
-                                    <figcaption class="heading">Alena Baikova</figcaption>
-                                    
+                                    <p class="heading">Alena Baikova</p>
                                     <p>Junior Front-End Developer</p>
-                                </figure>
+                                </div>
                                 <ul class="contacts-items">
                                     <li>
                                         <div class="contacts-list">
@@ -90,12 +88,13 @@
                                     </li>
                                 </ul>
                             </div>
-
                         </section>
                         <section id="summary">
                             <h2>Summary</h2>
-                            <p>I am Alena Baikova. I have worked as a content-manager for the last 2 years. I learned a lot of new things in my last job. My goal is to acquire a new profession (a frontend developer). I want to create useful products that are easy to use. One of my main strength is the ability to work in a team. I like interesting challenges. I hope that my knowledge and previous experience will help to become a good frontend developer.</p>
-
+                            <div class="summary-box">
+                                <p>I am Alena Baikova. I have worked as a content-manager for the last 2 years. I learned a lot of new things in my last job. My goal is to acquire a new profession (a frontend developer). I want to create useful products that are easy to use. One of my main strength is the ability to work in a team. I like interesting challenges. I hope that my knowledge and previous experience will help to become a good frontend developer.</p>
+                                <iframe src="https://www.youtube.com/embed/pdbNIHwS3CU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
                         </section>
                         <section id="skills">
                             <h2>Skills</h2>
@@ -152,15 +151,15 @@
                                 <div class="project">
                                     <p>A landing page for a cafe. </p>
                                     <p>Made with HTML and CSS.</p>
-                                    <a href="https://el-mouse.github.io/Pizza/" target="_blanc"><img src="./img/pizza.jpg" alt="Pizza" width="300" height="195"></a>
+                                    <a href="https://el-mouse.github.io/Pizza/" target="_blank"><img src="./img/pizza.jpg" alt="Pizza" width="300" height="195"></a>
                                 </div>
                             </article>
                             <article>
                                 <h4>Drum Kit </h4>
                                 <div class="project">
-                                    <p>Drum Kit is a music application in which you can play sounds <br>by pressing keys on the keyboard. <br>Each key has its own sound. A task from a RS School course. </p>
+                                    <p>Drum Kit is a music application in which you can play sounds by pressing keys on the keyboard. Each key has its own sound. A task from a RS School course. </p>
                                     <p>Made with HTML, CSS, JS.</p>
-                                    <a href="https://rolling-scopes-school.github.io/el-mouse-JSFEPRESCHOOL/drum-kit/" target="_blanc"><img src="./img/dk.jpg" alt="Drum Kit"></a>
+                                    <a href="https://rolling-scopes-school.github.io/el-mouse-JSFEPRESCHOOL/drum-kit/" target="_blank"><img src="./img/dk.jpg" alt="Drum Kit"></a>
                                 </div>
                             </article>
                             <h3>Sample code</h3>
@@ -189,7 +188,6 @@ function playByMouseClick(e) {
                             <h3>English level</h3>
                             <p>Middle between A1 and A2.</p>
                         </section>
-
                     </div>
                 </main>
                 <footer class="footer">
@@ -200,147 +198,15 @@ function playByMouseClick(e) {
                     </div>
                 </footer> 
             </div>
-
-            <!-- <script>
-                (function () {
-                    const burger = document.querySelector('.burger');
-                    burger.addEventListener('click', () => {
-                        burger.classList.toggle('burger-active');
-                    } );
-                });
-            </script>
- -->
-
-
-            <!-- <div class="wrapper">
-                <header class="header">
-                    <div class="header-wrapper">
-                        <figure>
-                            <img class="cv-photo" src="/img/CV_photo.jpg" alt="Alena Baikova" width="100" height="100">
-                        </figure>
-                        <h1 class="heading-text">Alena Baikova</h1>
-                        <div>
-                            <h3>Contacts</h3>
-                            <ul>
-                                <li>Location: Minsk, Belarus</li>
-                                <li>Tel.: <a href="tel:+375297020831">+375 29 702 08 31</a></li>
-                                <li>E-mail: <a href="mailto:elena.bo.d8@gmail.com">elena.bo.d8@gmail.com</a></li>
-                                <li>Skype: elena.bo.d8</li>
-                                <li>Discord: Alena Baikova (@el-mouse)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </header>
-                <main>
-                    <section>
-                        <h2 class="section-heading">Summary</h2>
-                        <p class="section-text">I am Alena Baikova. I have worked as a content-manager for the last 2 years. I learned a lot of new things in my last job. My goal is to acquire a new profession (a frontend developer). I want to create useful products that are easy to use. One of my main strength is the ability to work in a team. I like interesting challenges. I hope that my knowledge and previous experience will help to become a good frontend developer.</p>
-                    </section>
-                    <section>
-                        <h2 class="section-heading">Skills</h2>
-                        <p class="section-text">A basic level of</p>
-                        <ul class="icon-list">
-                            <li>
-                                <figure>
-                                    <img src="/img/html5.svg" alt="HTML" width="50" height="50">
-                                    <figcaption>HTML</figcaption>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/css-3.svg" alt="CSS" width="50" height="50">
-                                    <figcaption>CSS</figcaption>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/git.svg" alt="Git" width="50" height="50">
-                                    <figcaption>Git</figcaption>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/photoshop.svg" alt="Photoshop" width="50" height="50">
-                                    <figcaption>Photoshop</figcaption>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/figma.svg" alt="Figma" width="50" height="50">
-                                    <figcaption>Figma</figcaption>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/opencart.svg" alt="OpenCart" width="50" height="50">
-                                    <figcaption>OpenCart</figcaption>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="/img/1c_bitrix.svg" alt="1С-Битрикс" width="50" height="50">
-                                    <figcaption>1С-Битрикс</figcaption>
-                                </figure>
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h2 class="section-heading">Sample code</h2>
-                        <div class="sample-code">
-                            <pre>
-                                <code>
-                                    &lt;header&gt;
-                                        &lt;div class="wrapper"&gt;
-                                            &lt;div class="navigation"&gt;
-                                                &lt;img src="/img/logo.png" alt="Logo Pizza"&gt;
-                                                &lt;nav&gt;
-                                                    &lt;ul class="nav"&gt;
-                                                        &lt;li&gt;&lt;a href="#">Newsletter&lt;/a&gt;&lt;/li&gt;
-                                                        &lt;li&gt;&lt;a href="#">Community&lt;/a&gt;&lt;/li&gt;
-                                                        &lt;li&gt;&lt;a href="#">Shop&lt;/a&gt;&lt;/li&gt;
-                                                        &lt;li&gt;&lt;a href="#">Contact US&lt;/a&gt;&lt;/li&gt;
-                                                    &lt;/ul&gt;
-                                                &lt;/nav&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/header&gt;
-                                </code>
-                            </pre>
-                           
-                        </div>
-                    </section>
-                    <section>
-                        <h2 class="section-heading">Education</h2>
-                        <table>
-                            <tr>
-                                <td>1998–2003</td>
-                                <td>Belarusian State Technological University, Faculty of Publishing and Printing</td>
-                            </tr>
-                            <tr>
-                                <td>2014</td>
-                                <td>A1QA, software testing</td>
-                            </tr>
-                            <tr>
-                                <td>2021</td>
-                                <td>online learning: HTML Academy, Glo Academy, webDev</td>
-                            </tr>
-                        </table>
-                    </section>
-                    <section>
-                        <h2 class="section-heading">English level</h2>
-                        <div class="eng-level">
-                            <p class="section-text">Middle between A1 and A2.</p>
-                            <progress class="progress-bar" value="0.2">Progress</progress>
-                        </div>
-                    </section>
-                </main>
-                <footer class="footer">
-                    <div class="footer-items">
-                        <a href="https://github.com/el-mouse" target="_blank"><img src="/img/github.svg" alt="github" width="50" height="50"></a>
-                        <time>2021</time>
-                        <a href="https://rs.school/js/" target="_blank"><img src="https://rs.school/images/rs_school_js.svg" alt="rsschool" width="100"></a>
-                    </div>
-                </footer>
-            </div> -->
+            <script>
+                function myFunction() {
+                  const x = document.getElementById('links');
+                  if (x.style.display === 'block') {
+                    x.style.display = 'none';
+                  } else {
+                    x.style.display = 'block';
+                  }
+                }
+                </script>
         </body>
         </html>
