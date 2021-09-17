@@ -170,13 +170,13 @@ a {
 }
   
 .burger a.icon {
-    background: var(--bg1);
-    opacity: 0.7;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
     font-size: 36px;
+    background: var(--bg1);
+    opacity: 0.7;
     border-radius: 10px;
 }
   
@@ -238,8 +238,8 @@ section {
 }
 
 .contacts-bg > p {
-    text-transform: uppercase;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .contacts-list {
@@ -323,7 +323,6 @@ article:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    column-gap: 100px;
     font-size: 18px;
 }
 
@@ -410,13 +409,6 @@ article:hover {
         margin-left: 5px;
         margin-right: 5px;
     }
-    .footer-items {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        column-gap: 10px;
-    }
 }  
 
 @media (max-width: 440px) {
@@ -434,5 +426,11 @@ article:hover {
     }
     iframe {
         width: 100%;
+    }
+    .footer-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
