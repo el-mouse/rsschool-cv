@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: url(./img/notebook-paper.jpg);
+    background: url(../img/notebook-paper.jpg);
     color: var(--bg2);
     font-family: "Roboto", sans-serif;
     transition: all .5s ease;
