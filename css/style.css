@@ -1,3 +1,4 @@
+
 :root {
     --bg1: #08278f;
     --bg2: #000000;
@@ -493,4 +494,5 @@ article:hover {
         justify-content: space-between;
         align-items: center;
     }
+
 }
