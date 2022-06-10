@@ -17,9 +17,10 @@
         <body>
             <div class="wrapper">
                 <header class="header">
+                    <a href="#" title="Back to top" class="topbutton">TOP</a>
                     <div class="header-box">
                         <div class="logo">
-                            <img src="./img/logo.png" alt="logo CV" width="70" height="70">
+                            <a href="#"><div class="logo-cv">CV</div></a>
                             <h1>Alena Baikova</h1>
                         </div>
                         <nav class="nav-header">
@@ -51,7 +52,7 @@
                             <h2>Contacts</h2>
                             <div class="contacts-box">
                                 <div class="contacts-bg">
-                                    <img class="cv-photo" src="./img/CV_photo.jpg" alt="Alena Baikova" width="100" height="100">
+                                    <img class="cv-photo" src="./img/CV_photo.jpg" alt="Alena Baikova" width="150" height="150">
                                     <p class="heading">Alena Baikova</p>
                                     <p>Junior Front-End Developer</p>
                                 </div>
@@ -82,6 +83,12 @@
                                     </li>
                                     <li>
                                         <div class="contacts-list">
+                                            <img src="./img/telegram.svg" alt="Telegram" width="30" height="30">
+                                            <p>@gato_pelirrojo</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contacts-list">
                                             <img src="./img/discord.svg" alt="Discord" width="30" height="30">
                                             <p>Discord: Alena Baikova (@el-mouse) #9145</p>
                                         </div>
@@ -92,7 +99,7 @@
                         <section id="summary">
                             <h2>Summary</h2>
                             <div class="summary-box">
-                                <p>I am Alena Baikova. I have worked as a content-manager for the last 2 years. I learned a lot of new things in my last job. My goal is to acquire a new profession (a frontend developer). I want to create useful products that are easy to use. One of my main strength is the ability to work in a team. I like interesting challenges. I hope that my knowledge and previous experience will help to become a good frontend developer.</p>
+                                <div class="summary-text">I am Alena Baikova. I have worked as a content-manager for the last 2 years. I learned a lot of new things in my last job. And now I want to upgrade my skills. My goal is to acquire a new profession (a frontend developer). I want to create useful products that are easy to use. One of my main strength is the ability to work in a team. I like interesting challenges. I hope that my knowledge and previous experience will help to become a good frontend developer.</div>
                                 <iframe src="https://www.youtube.com/embed/NpGx2D99QaY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </section>
@@ -157,7 +164,7 @@
                                 <div class="project">
                                     <p>A landing page for a cafe. Non-adaptive layout.</p>
                                     <p>Made with HTML and CSS.</p>
-                                    <a href="https://el-mouse.github.io/Pizza/" target="_blank"><img src="./img/pizza.jpg" alt="Pizza" width="300" height="195"></a>
+                                    <a href="https://el-mouse.github.io/Pizza/" target="_blank"><img src="./img/pizza1.jpg" alt="Pizza" width="300" height="169"></a>
                                 </div>
                             </article>
                             <article>
@@ -165,7 +172,15 @@
                                 <div class="project">
                                     <p>Drum Kit is a music application in which you can play sounds by pressing keys on the keyboard. Each key has its own sound. A task from a RS School course. </p>
                                     <p>Made with HTML, CSS, JS.</p>
-                                    <a href="https://rolling-scopes-school.github.io/el-mouse-JSFEPRESCHOOL/drum-kit/" target="_blank"><img src="./img/dk.jpg" alt="Drum Kit"></a>
+                                    <a href="https://el-mouse.github.io/drum-kit/" target="_blank"><img src="./img/dk1.jpg" alt="Drum Kit" width="300" height="169"></a>
+                                </div>
+                            </article>
+                            <article>
+                                <h4>CSS Mem Slider</h4>
+                                <div class="project">
+                                    <p>Slider without JS. Non-adaptive layout. A task from a RS School course.</p>
+                                    <p>Made with HTML and CSS.</p>
+                                    <a href="https://el-mouse.github.io/cssMemSlider/cssMemSlider/index.html" target="_blank"><img src="./img/cssmemslider.jpg" alt="CSS Mem Slider" width="300" height="169"></a>
                                 </div>
                             </article>
                             <h3>Sample code</h3>
@@ -189,17 +204,17 @@ function playByMouseClick(e) {
                             <p>1998–2003: Belarusian State Technological University, Faculty of Publishing and Printing</p>
                             <h3>Courses</h3>
                             <p>2014: A1QA, software testing</p>
-                            <p>2021: RS School, JS/FE, Pre-School</p>
+                            <p>2022: RS School, JS/FE, Pre-School (in process)</p>
                             <p>Online learning: HTML Academy, Glo Academy, webDev</p>
                             <h3>English level</h3>
-                            <p>Middle between A1 and A2.</p>
+                            <p>My level of English is A2.</p>
                         </section>
                     </div>
                 </main>
                 <footer class="footer">
                     <div class="footer-items">
-                        <a class="item-bg" href="https://github.com/el-mouse" target="_blank"><img src="./img/github.svg" alt="github" width="50" height="50"></a>
-                        <time>2021</time>
+                        <a class="item-bg" href="https://github.com/el-mouse" target="_blank"><img src="/img/github.svg" alt="github" width="50" height="50"></a>
+                        <time>2022</time>
                         <a class="item-bg" href="https://rs.school/js/" target="_blank"><img src="https://rs.school/images/rs_school_js.svg" alt="rsschool" width="100"></a>
                     </div>
                 </footer> 
@@ -214,22 +229,17 @@ function playByMouseClick(e) {
                   }
                 }
                 console.log(`Pull request: https://github.com/el-mouse/rsschool-cv/pull/3
-Score: 160 / 160
-1) Вёрстка валидная (10 баллов). 
-2) Вёрстка семантическая. Присутствуют теги article, figure, figcaption, footer, header, main, nav, section, h1, h2, h3, h4. h1 – один на странице (20 баллов).
-3) Для оформления СV используются css-стили (10 баллов). 
-4) Контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет тянется во всю ширину страницы (10 баллов).
-5) Вёрстка адаптивная без горизонтальной прокрутки. При малых разрешениях экрана содержание страницы сохраняется (за исключением специально скрытых элементов, которые не планировалось отображать при данном разрешении) (10 баллов).
-6) Есть адаптивное бургер-меню (появляется на экранах шириной менее 768 px). Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям (10 баллов). 
-7) На странице СV присутствует изображения, их пропорции не искажены, есть атрибуты alt (10 баллов). 
-8) контакты для связи и перечень навыков оформлены в виде списка ul > li (10 баллов).
-9) CV содержит контакты, краткую информацию о себе, навыки, образование, уровень английского (10 баллов).
-10) CV содержит пример кода с подсветкой (10 баллов).
-11) CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий (10 баллов).
-12) CV выполнено на английском языке (10 баллов).
-13) Выполнены требования к репозиторию: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, указана дата дедлайна, выполнена самооценка (10 баллов). 
-14) Есть видеорезюме автора CV на английском языке. Видеорезюме встраивается в страницу CV как видео, продолжительность видео 3 мин 7 с. В описание видео на YouTube добавлена ссылка на его транскрипцию на английском языке в документе Google Docs (10 баллов).
-15) Дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (10 баллов).
+Score: 130 / 130
+1) Ссылка на CV есть (10 баллов).
+2) Вёрстка валидная (10 баллов). 
+3) Вёрстка семантическая. Присутствуют теги article, figure, figcaption, footer, header, main, nav, section, h1, h2, h3, h4. h1 – один на странице (20 баллов).
+4) В footer есть ссылка на гитхаб, год создания приложения, логотип курса со ссылкой на курс (10 баллов).
+5) Для оформления СV используются css-стили (10 баллов). 
+6) при уменьшении масштаба страницы браузера вёрстка размещается по центру по горизонтали, а не сдвигается в сторону (10 баллов).
+7) На странице СV есть фото или аватарка автора, пропорции изображения не искажены, у изображения есть атрибут alt (10 баллов). 
+8) Навигация, контакты для связи и перечень навыков оформлены в виде списка ul > li или ul > li > a (10 баллов).
+9) CV содержит краткую информацию о себе, контакты, навыки, образование, уровень английского, пример кода с помощью символов, перечень учебных проектов со ссылками на них (30 баллов).
+10) CV выполнено на английском языке (10 баллов).
 `)
                 </script>
         </body>
