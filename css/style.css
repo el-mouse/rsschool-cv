@@ -494,5 +494,10 @@ article:hover {
         justify-content: space-between;
         align-items: center;
     }
-
+    .burger a {
+        padding: 10px 20px;
+    }
+    .burger a.icon {
+        font-size: 18px;
+    }
 }
